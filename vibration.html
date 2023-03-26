@@ -2,35 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Document</title>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <title>OpenStreetMap</title>
+
     <style>
-        body{
+        body {
             background-color: aqua;
         }
     </style>
+
 </head>
 
-<body>
-    <div id="vibrating-button">
-        <button class="btn btn-primary my-2" onclick="vibrate()">
-            Zawibruj
-        </button>
+<body style="background-color:#55595c;">
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+        <div id="vibrating-button">
+            <button class="btn btn-primary my-2" onclick="vibrate()">
+                Zawibruj
+            </button>
+        </div>
     </div>
     <script>
         function vibrate() {
             console.log('vibrating');
             window.navigator.vibrate([200, 100, 200]);
         }
-
     </script>
 </body>
 
