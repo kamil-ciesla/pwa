@@ -27,7 +27,7 @@
             zoom:17
         }
         let map = new L.map('map' , mapOptions);
-        let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        let layer = new L.TileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png');
         map.addLayer(layer);
         let marker = new L.Marker([50.06914, 19.9547]);
         marker.addTo(map);
