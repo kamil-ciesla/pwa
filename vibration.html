@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
 </head>
+
 <body>
     <div id="vibrating-button">
         <button class="btn btn-primary my-2" onclick="vibrate()">
@@ -19,11 +26,11 @@
         </button>
     </div>
     <script>
-        function vibrate(){
+        function vibrate() {
             console.log('vibrating');
-        window.navigator.vibrate([200, 100, 200]);
+            window.navigator.vibrate([200, 100, 200]);
         }
-        
+
     </script>
 </body>
 
