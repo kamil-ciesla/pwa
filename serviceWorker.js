@@ -1,10 +1,14 @@
 
 const staticDevCoffee = "dev-coffee-site-v1"
+const GHPATH = '/pwa';
 const assets = [
-  "/",
-  "/index.html",
-  "/js/app.js",
+  `${GHPATH}/`,
+  `${GHPATH}/index.html`,
+  `${GHPATH}/map.html`,
+  `${GHPATH}/vibration.html`,
+  `${GHPATH}/js/app.js`,
 ]
+
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
